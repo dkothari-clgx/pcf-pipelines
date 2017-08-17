@@ -28,7 +28,7 @@ terraform destroy \
   -var "prefix=dontcare" \
   -var "opsman_ami=dontcare" \
   -var "amis_nat=dontcare" \
-  -var "aws_region=dontcare" \
+  -var "aws_region=${AWS_REGION}" \
   -var "az1=dontcare" \
   -var "az2=dontcare" \
   -var "az3=dontcare" \
