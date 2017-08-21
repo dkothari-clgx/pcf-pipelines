@@ -338,15 +338,3 @@ jobs:
       AWS_ACCESS_KEY_ID: {{TF_VAR_aws_access_key}}
       AWS_SECRET_ACCESS_KEY: {{TF_VAR_aws_secret_key}}
       AWS_REGION: {{TF_VAR_aws_region}}
-
-  - name: wipe-ert
-    serial_groups: [opsman]
-    plan:
-    - aggregate:
-      - get: pcf-pipelines
-    - task: wipe-ert
-      file: pcf-pipelines/install-pcf/aws/tasks/wipe-ert/task.yml
-      params:
-        OPSMAN_DOMAIN_OR_IP_ADDRESS: {{opsman_domain_or_ip_address}}
-        OPSMAN_USERNAME: {{OPSMAN_USER}}
-        OPSMAN_PASSWORD: {{OPSMAN_PASSWORD}}
