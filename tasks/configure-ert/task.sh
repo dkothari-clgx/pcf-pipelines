@@ -74,11 +74,11 @@ cf_resources=$(
       "etcd_tls_server": {"internet_connected": false},
       "nfs_server": {"internet_connected": false},
       "mysql_proxy": {
-        "instances": 0,
+        "instances": 3,
         "internet_connected": false
       },
       "mysql": {
-        "instances": 0,
+        "instances": 3,
         "internet_connected": false
       },
       "backup-prepare": {"internet_connected": false},
@@ -90,7 +90,7 @@ cf_resources=$(
       "ha_proxy": {"internet_connected": false},
       "router": {"internet_connected": false},
       "mysql_monitor": {
-        "instances": 0,
+        "instances": 1,
         "internet_connected": false
       },
       "clock_global": {"internet_connected": false},
