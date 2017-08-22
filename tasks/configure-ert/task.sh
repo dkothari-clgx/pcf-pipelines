@@ -74,23 +74,23 @@ cf_resources=$(
       "etcd_tls_server": {"internet_connected": false},
       "nfs_server": {"internet_connected": false},
       "mysql_proxy": {
-        "instances": 3,
+        "instances": 0,
         "internet_connected": false
       },
       "mysql": {
-        "instances": 3,
+        "instances": 0,
         "internet_connected": false
       },
       "backup-prepare": {"internet_connected": false},
       "ccdb": {"internet_connected": false},
-      "diego_database": {"internet_connected": false},
+      "diego_database": { "instances": 0, "internet_connected": false},
       "uaadb": {"internet_connected": false},
       "uaa": {"internet_connected": false},
       "cloud_controller": {"internet_connected": false},
       "ha_proxy": {"internet_connected": false},
       "router": {"internet_connected": false},
       "mysql_monitor": {
-        "instances": 1,
+        "instances": 0,
         "internet_connected": false
       },
       "clock_global": {"internet_connected": false},
