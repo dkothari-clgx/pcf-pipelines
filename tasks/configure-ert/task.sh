@@ -83,7 +83,7 @@ cf_resources=$(
       },
       "backup-prepare": {"internet_connected": false},
       "ccdb": {"internet_connected": false},
-      "diego_database": { "instances": 0, "internet_connected": false},
+      "diego_database": {"internet_connected": false},
       "uaadb": {"internet_connected": false},
       "uaa": {"internet_connected": false},
       "cloud_controller": {"internet_connected": false},
